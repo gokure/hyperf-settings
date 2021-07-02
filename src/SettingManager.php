@@ -46,9 +46,9 @@ class SettingManager
         return $this->drivers[$name] = $instance;
     }
 
-    public function call($callback, string $key, $config = 'default')
+    public function call($callback, $key, $name = 'default')
     {
-        $driver = $this->getDriver($config);
+        $driver = $this->getDriver($name);
 
         if ($driver->has($key)) {
             return $driver->get($key);
@@ -58,5 +58,17 @@ class SettingManager
         $driver->set($key, $result);
 
         return $result;
+    }
+
+    /**
+     * Dynamically call the default driver instance.
+     *
+     * @param  string  $method
+     * @param  array   $parameters
+     * @return mixed
+     */
+    public function __call($method, $parameters)
+    {
+        return $this->getDriver()->$method(...$parameters);
     }
 }
