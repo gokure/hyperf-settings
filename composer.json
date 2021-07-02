@@ -41,6 +41,11 @@
     "config": {
         "sort-packages": true
     },
+    "extra": {
+        "hyperf": {
+            "config": "Gokure\\Settings\\ConfigProvider"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
