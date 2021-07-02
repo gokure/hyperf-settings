@@ -26,7 +26,7 @@ class FileSystemStore extends Store
         parent::__construct($container, $config);
 
         $this->files = $container->get(Filesystem::class);
-        $this->setPath($config['path']);
+        $this->setPath($config['path'] ?? BASE_PATH . '/runtime/settings.json');
     }
 
     /**
