@@ -23,6 +23,12 @@ class ConfigProvider
                     'source' => __DIR__ . '/../publish/settings.php',
                     'destination' => BASE_PATH . '/config/autoload/settings.php',
                 ],
+                [
+                    'id' => 'migration',
+                    'description' => 'The migration file for settings.',
+                    'source' => __DIR__ . '/../publish/2021_07_02_143511_create_settings_table.php',
+                    'destination' => BASE_PATH . '/migrations/2021_07_02_143511_create_settings_table.php',
+                ],
             ],
         ];
     }
