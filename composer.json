@@ -21,11 +21,17 @@
         "roave/security-advisories": "dev-master",
         "swoole/ide-helper": "^4.5"
     },
+    "suggest": {
+        "hyperf/http-server": "Reqiured to use settings middleware."
+    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Gokure\\Settings\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

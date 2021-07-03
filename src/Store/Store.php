@@ -128,7 +128,6 @@ abstract class Store
 
     /**
      * Clear all keys in the settings data.
-     * @return $this
      */
     public function flush(): void
     {
