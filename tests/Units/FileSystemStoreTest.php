@@ -7,6 +7,7 @@ namespace Gokure\Settings\Tests\Units;
 use Gokure\Settings\SettingManager;
 use Gokure\Settings\Store\FileSystemStore;
 use Hyperf\Config\Config;
+use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ContainerInterface;
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Filesystem\Filesystem;
@@ -77,6 +78,8 @@ class FileSystemStoreTest extends TestCase
                 ],
             ],
         ]);
+
+        $container->shouldReceive('get')->with(ConfigInterface::class)->andReturn($config);
         $container->shouldReceive('get')->with(SettingManager::class)->andReturn(new SettingManager($config));
         $container->shouldReceive('get')->with(Filesystem::class)->andReturn(m::mock(Filesystem::class));
         $container->shouldReceive('make')->with(FileSystemStore::class, m::any())->andReturnUsing(function ($_, $args) use ($container) {
