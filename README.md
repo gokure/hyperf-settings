@@ -1,5 +1,10 @@
 # Persistent settings package for Hyperf
 
+[![Build Status](https://www.travis-ci.com/gokure/hyperf-settings.svg?branch=main)](https://www.travis-ci.com/gokure/hyperf-settings)
+[![Latest Stable Version](https://poser.pugx.org/gokure/hyperf-settings/v/stable)](https://packagist.org/packages/gokure/hyperf-settings)
+[![Total Downloads](https://poser.pugx.org/gokure/hyperf-settings/downloads)](https://packagist.org/packages/gokure/hyperf-settings)
+[![License](https://poser.pugx.org/akaunting/laravel-setting/license.svg)](LICENSE)
+
 This package allows you to save settings in a more persistent way. You can use the database and/or json file to save your settings.
 
 ## Installation
