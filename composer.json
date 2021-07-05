@@ -50,6 +50,9 @@
     "extra": {
         "hyperf": {
             "config": "Gokure\\Settings\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     },
     "scripts": {
