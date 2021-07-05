@@ -31,6 +31,7 @@ install:
   - phpenv config-add .travis/ci.ini
   - bash .travis/setup.mysql.sh
   - cp .travis/.env.example .env
+  - cp phpunit.xml.dist phpunit.xml
   - travis_retry composer install --no-suggest --no-interaction
 
 before_script:
