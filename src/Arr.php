@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gokure\Settings\Utils;
+namespace Gokure\Settings;
 
 class Arr
 {

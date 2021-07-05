@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Gokure\Settings\Store;
+namespace Gokure\Settings;
 
-use Gokure\Settings\Utils\Arr;
 use Psr\Container\ContainerInterface;
 
 abstract class Store
@@ -174,7 +173,7 @@ abstract class Store
      *
      * @param array $data
      *
-     * @return void
+     * @return bool
      */
     abstract protected function write(array $data): bool;
 }

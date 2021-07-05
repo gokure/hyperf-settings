@@ -20,7 +20,7 @@ if (!function_exists('setting')) {
             throw new \RuntimeException('The application context lacks the container.');
         }
 
-        $store = ApplicationContext::getContainer()->get(SettingManager::class);
+        $store = ApplicationContext::getContainer()->get(SettingManager::class)->getDriver();
 
         if (is_null($key)) {
             return $store;

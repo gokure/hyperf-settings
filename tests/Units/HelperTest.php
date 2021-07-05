@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace Gokure\Settings\Tests\Units;
 
 use Gokure\Settings\SettingManager;
-use Gokure\Settings\Store\FileSystemStore;
+use Gokure\Settings\FileSystemStore;
+use Gokure\Settings\Store;
 use Hyperf\Config\Config;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Di\Container;
@@ -36,7 +37,7 @@ class HelperTest extends TestCase
 
     public function testHelperWithoutParametersReturnsSettingManager()
     {
-        $this->assertInstanceOf(SettingManager::class, setting());
+        $this->assertInstanceOf(Store::class, setting());
     }
 
     public function testSingleParameterGetAKeyFromStore()

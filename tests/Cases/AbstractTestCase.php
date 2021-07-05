@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Gokure\Settings\Tests\Cases;
 
-use Gokure\Settings\Store\DatabaseStore;
+use Gokure\Settings\DatabaseStore;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractTestCase extends TestCase

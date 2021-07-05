@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Gokure\Settings\Tests\Units;
 
-use Gokure\Settings\Utils\Arr;
+use Gokure\Settings\Arr;
 use PHPUnit\Framework\TestCase;
 
 class ArrTest extends TestCase

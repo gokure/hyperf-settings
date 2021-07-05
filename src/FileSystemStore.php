@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Gokure\Settings\Store;
+namespace Gokure\Settings;
 
 use Hyperf\Utils\Filesystem\Filesystem;
 use InvalidArgumentException;

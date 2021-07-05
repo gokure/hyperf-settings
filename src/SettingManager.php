@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Gokure\Settings;
 
-use Gokure\Settings\Store\FileSystemStore;
-use Gokure\Settings\Store\Store;
 use Hyperf\Contract\ConfigInterface;
 use InvalidArgumentException;
 

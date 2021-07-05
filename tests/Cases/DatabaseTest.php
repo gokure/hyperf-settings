@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Gokure\Settings\Tests\Cases;
 
 use Gokure\Settings\SettingManager;
-use Gokure\Settings\Store\DatabaseStore;
+use Gokure\Settings\DatabaseStore;
 use Gokure\Settings\Tests\Stubs\CreateSettingsTableStub;
 use Hyperf\Config\Config;
 use Hyperf\Contract\ApplicationInterface;

@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Gokure\Settings\Store;
+namespace Gokure\Settings;
 
 use Closure;
 use Hyperf\Database\ConnectionResolverInterface;
 use Hyperf\Utils\Arr as HyperfArr;
-use Gokure\Settings\Utils\Arr;
 use Psr\Container\ContainerInterface;
 
 class DatabaseStore extends Store

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Gokure\Settings\Tests\Cases;
 
 use Gokure\Settings\SettingManager;
-use Gokure\Settings\Store\FileSystemStore;
+use Gokure\Settings\FileSystemStore;
 use Hyperf\Config\Config;
 use Hyperf\Contract\ApplicationInterface;
 use Hyperf\Contract\ConfigInterface;

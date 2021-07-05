@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'default' => [
-        'driver' => Gokure\Settings\Store\FileSystemStore::class,
+        'driver' => Gokure\Settings\FileSystemStore::class,
 
         'path' => BASE_PATH . '/runtime/settings.json',
 
